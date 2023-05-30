@@ -9,6 +9,9 @@ import {
 import useCategories from "../hooks/useCategories";
 function CategoryList() {
   const { data, isLoading, error } = useCategories();
+  const capitalizeFirst = (str: string) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
 
   if (error) return null;
 
@@ -36,8 +39,12 @@ function CategoryList() {
                 borderColor={"gray.400"}
                 key={cat}
                 padding={4}
+                color="#315350"
+                fontSize={"xs"}
+                fontWeight="semibold"
+                fontFamily={"sofia-pro, sans-serif"}
               >
-                {cat}
+                {capitalizeFirst(cat)}
               </ListItem>
             ))}
           </HStack>

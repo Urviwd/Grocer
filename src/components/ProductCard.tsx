@@ -19,7 +19,9 @@ import { AiOutlineHeart } from "react-icons/ai";
 
 const ProductCard = () => {
   const { data, isLoading, error } = useProducts();
-
+  const capitalizeFirst = (str: string) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
   if (error) return null;
 
   if (isLoading)
@@ -79,8 +81,9 @@ const ProductCard = () => {
                     marginTop={2}
                     fontSize=".6em"
                     fontWeight="bold"
+                    color="#315350"
                   >
-                    {product.category}
+                    {capitalizeFirst(product.category)}
                   </Text>
                   <Text
                     height="55px"
