@@ -38,7 +38,7 @@ function CategoryList() {
                 borderRight={"1px"}
                 borderColor={"gray.400"}
                 key={cat}
-                padding={4}
+                padding={5}
                 color="#315350"
                 fontSize={"xs"}
                 fontWeight="semibold"
