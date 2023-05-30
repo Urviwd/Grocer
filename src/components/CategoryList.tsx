@@ -1,12 +1,10 @@
 import {
   Box,
-  Flex,
   HStack,
   List,
   ListItem,
   SimpleGrid,
   Spinner,
-  Stack,
 } from "@chakra-ui/react";
 import useCategories from "../hooks/useCategories";
 function CategoryList() {
