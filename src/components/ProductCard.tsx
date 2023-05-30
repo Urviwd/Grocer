@@ -48,7 +48,7 @@ const ProductCard = () => {
       >
         {data?.map((product) => (
           <HStack key={product.id}>
-            <Card width={250} height={400}>
+            <Card width={250} height={370}>
               <CardBody padding={3}>
                 <Box
                   float="right"
